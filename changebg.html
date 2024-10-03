@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubah Warna Background</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 100px;
+            font-family: Arial, sans-serif;
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 18px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .red {
+            background-color: red;
+            color: white;
+        }
+
+        .yellow {
+            background-color: yellow;
+            color: black;
+        }
+
+        .green {
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Ubah Warna Background</h1>
+
+    <button class="button red" onclick="changeBackgroundColor('red')">Merah</button>
+    <button class="button yellow" onclick="changeBackgroundColor('yellow')">Kuning</button>
+    <button class="button green" onclick="changeBackgroundColor('green')">Hijau</button>
+
+    <script>
+        function changeBackgroundColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+
+</body>
+</html>
